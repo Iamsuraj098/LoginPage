@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title></title>
+</head>
+<body>
+    <div class="box">
+        <div class="circle">
+        </div>
+        <div class="lookup" id="lookup"> 
+            <p class="heading">LOGIN</p>
+            <input type="text" name="userid" id="userId" placeholder="User name">
+            <input type="text" name="password" id="password" placeholder="Password">
+            <button class="login" onclick="check()">Login</button>
+            <p class="bottom">Create account</p> 
+        </div>
+        <div class="lookup2" id="lookup2">
+            <p class="heading">REGISTRATION</p>
+            <input type="text" name="user id" id="newuser" placeholder="User Id">
+            <input type="text" name="Email iD" id="newEmail" placeholder="Email Id">
+            <input type="text" name="password" id="newpassword" placeholder="Create Password">
+            <button class="login" onclick="register()">Register</button>
+            <p class="bottom">Already have an account</p>   
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

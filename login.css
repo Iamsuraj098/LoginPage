@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(wall.jpg) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.lookup {
+    position: absolute;
+    top: 15%;
+    opacity: 1;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 58%;
+    border-radius: 20px;
+    transition: ease-in;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+}
+
+.heading {
+    font-size: 2.8em;
+    margin: 40px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.lookup input {
+    margin: 10px;
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    text-indent: 10px;
+    font-size: 1.2em;
+    padding: 8px;
+    font-weight: 550;
+}
+
+.login {
+    margin-top: 40px;
+    font-size: 1.5em;
+    font-weight: 550;
+    width: 25%;
+    border-radius: 10px;
+    height: 40px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.login:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+
+.bottom {
+    font-size: 1.2em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.bottom:hover {
+    text-decoration: underline;
+}
+
+.lookup2 {
+    position: absolute;
+    top: 15%;
+    opacity: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 68%;
+    transition: ease-in;
+    border-radius: 20px;
+    transition: ease-in;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+}
+
+.lookup2 input {
+    margin: 10px;
+    width: 60%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    text-indent: 10px;
+    font-size: 1.2em;
+    padding: 8px;
+    font-weight: 550;
+}
+
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: 20%;
+    z-index: 10;
+    width: 20%;
+    height: 40%;
+    border-radius: 100%;
+    background: white;
+    transition: 0.8s ease-in;
+    font-size: 2.5em;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500
+}
